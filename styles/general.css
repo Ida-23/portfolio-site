@@ -3,6 +3,16 @@ img {
     height: auto;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    /*    background-color: #0B1327;*/
+}
+
+header {
+    height: 0;
+}
+
 html {
     font-size: 18px;
 }
@@ -12,7 +22,92 @@ section {
     max-width: 1200px;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+}
+
+/*-------------Font og deres forhold-------------------*/
+
+
+/*-------------Burgermenu------------------------------*/
+
+.hidden {
+    opacity: 0;
+    /*    transform: translateX(-100%);*/
+
+}
+
+#menuknap {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+#menu {
+    list-style-type: none;
+    background-color: rgba(195, 195, 195, 0.8);
+}
+
+#menu li {
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+a {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #f4bd07;
+}
+
+
+.logo {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.logo a {
+    color: black;
+}
+
+
+/*-------------footer---------------------------*/
 
 
 
-@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 600px) {
+
+    nav {
+        display: block;
+    }
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        /*        transform: translateX(0);*/
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu {
+        text-align: center;
+        background-color: rgba(195, 195, 195, 0);
+    }
+}
