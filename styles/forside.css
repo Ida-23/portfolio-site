@@ -38,6 +38,7 @@ body {
     padding-top: 5px;
 }
 
+/*
 #udpluk .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,7 +54,7 @@ body {
     column-gap: 90px;
     padding-left: 90px;
     width: 70%;
-/*    filter: grayscale(100%);*/
+    filter: grayscale(100%);
 
 }
 
@@ -67,17 +68,40 @@ body {
     width: 70%;
     padding-left: 90px;
 
-}
-
-/*
-.top a {
-    filter: grayscale(50%);
-}
-
-#udpluk a:hover {
-    opacity: 100%;
 }*/
 
+.image-container {
+    display: flex;
+    gap: 5px;
+    /*    padding: 20px;*/
+}
+
+.image-container figure {
+    flex-grow: 1;
+}
+
+.image-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+}
+
+.image-container figure {
+    flex-basis: 90%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    padding-right: 15px;
+}
+
+.image-container figcaption {
+    font-size: 1.2rem;
+    font-family: 'Tenor Sans', sans-serif;
+    text-align: center;
+}
+
+
+
+/*-------knap-------*/
 #udpluk .bottom {
     text-align: center;
 }
@@ -99,8 +123,6 @@ body {
     text-align: center;
     box-shadow: 5px 5px 5px gray;
     color: #FFFFFF;
-
-
 }
 
 
@@ -111,20 +133,15 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*-----------om mig, layout over cv siden -------------*/
 #om_mig {
     background-color: #FFFFFF;
     margin-top: 200px;
 }
+
+
+
+
 
 
 @media only screen and (min-width: 600px) {
@@ -139,4 +156,24 @@ body {
         grid-row-end: span 1;
         text-align: center;
     }
+
+
+    /*---------udpluk siden --------------*/
+    .image-container {
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .image-container figure {
+        flex-grow: 0;
+    }
+
+
+    /*-----------------om mig, layout over cv siden-------------*/
+
+
+
+
 }

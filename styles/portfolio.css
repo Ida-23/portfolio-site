@@ -12,16 +12,67 @@
     color: #eba31b;
 }
 
+img {
+    width: 70%;
+    padding-top: 40px;
+}
+
+
 
 
 /*----------indholdet -------------*/
 
 #portfolio_indhold .section_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 100px;
+    margin-bottom: 140px;
+    margin-top: 40px;
+    text-align: center;
 }
+
+#portfolio_indhold h3 {
+    margin: 0;
+
+}
+
+.left_top,
+.right_top,
+.left_bottom,
+.right_bottom {
+    margin-top: 30px;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+
+    nav {
+        background-color: #ffff;
+    }
+
+    #portfolio_splash {
+        height: auto;
+    }
+
+    #portfolio_splash .section_wrapper {
+        padding-bottom: 150px;
+        padding-top: 300px;
+    }
+
+    /*----------indholdet -------------*/
+
+    #portfolio_indhold .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 50px;
+    }
+
+}
+
+
+
 
 
 /*
@@ -90,44 +141,3 @@
 }
 
 */
-
-
-
-@media only screen and (min-width: 600px) {
-    nav {
-        background-color: #ffff;
-    }
-
-    #portfolio_splash {
-        height: auto;
-    }
-
-    #portfolio_splash .section_wrapper {
-        padding-bottom: 150px;
-        padding-top: 300px;
-    }
-
-    /*----------- billede med mig og selve teksten-----*/
-
-    #om_mig_mig .section_wrapper {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 40px;
-    }
-
-
-    /*-----------tekst delens grid---------*/
-    #om_mig_tekst {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 40px;
-    }
-
-
-
-
-
-
-
-
-}

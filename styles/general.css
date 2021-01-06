@@ -18,7 +18,7 @@ html {
 }
 
 section {
-    margin: 0 auto;
+    margin: 0px auto;
     max-width: 1200px;
 }
 
@@ -26,8 +26,9 @@ nav {
     position: fixed;
     width: 100%;
     height: auto;
-    text-transform: uppercase;
 }
+
+
 
 /*-------------Font og deres forhold-------------------*/
 
@@ -128,6 +129,8 @@ footer .section_wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     color: aliceblue;
+    padding: 0px 12px;
+
 }
 
 footer .section_wrapper .top {
