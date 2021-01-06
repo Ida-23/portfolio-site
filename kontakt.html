@@ -9,7 +9,7 @@
 
     <!--styles-->
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/forside.css">
+    <link rel="stylesheet" href="styles/kontant.css">
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +33,7 @@
         <nav>
             <div class="logo"> <a href="index.html">Ida Sofie <br> Papp Svendsen</a></div>
 
-            <div id="menuknap">☰</div>
+            <div id="menuknap">X</div>
             <ul id="menu" class="hidden">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -44,53 +44,44 @@
     </header>
 
     <main>
-        <section id="splach">
-            <div class="section_wrapper">
-                <h1>PORTFOLIO</h1>
-            </div>
-        </section>
-        <section id="udpluk">
-            <div class="overskrift_udpluk">
-                <h2>UDPLUK FRA TEMAERNE</h2>
-            </div>
-            <div class="section_wrapper">
-                <div class="col_left">
-                    <div class="top">
-                        <a href="portfolio.html"><img src="styles/tema2.png" alt="billede"></a>
-                    </div>
-                    <div class="bottom">
-                        <h3>Tema 2 - Grundlæggende HTML</h3>
-                    </div>
-                </div>
-                <div class="col_right">
-                    <div class="top">
-                        <img src="tema3_1.png" alt="">
-                    </div>
-                    <div class="bottom">
-                        <h3>Tema 3 - Grundlæggende UX</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="knap">
-                <div class="button"> <a href="portfolio.html">SE ALLE TEMAER</a></div>
-            </div>
 
+        <section id="splach">
+            <div class="section_wrapper"></div>
         </section>
-        <section id="om_mig">
-            <h1>hej</h1>
-            <h2>hej</h2>
-            <h3>HEJ</h3>
-            <h1>hej</h1>
-            <h1>HEJ</h1>
-            <h1>hej</h1>
-            <h1>hej</h1>
-            <h1>hej</h1>
+
+        <section id="kontakt">
             <div class="section_wrapper">
-                <div class="col_left">
-                </div>
-                <div class="col_rigth"></div>
+                <article>
+                    <h2>KONTAKT</h2>
+                    <p>Alle felter med * skal udfyldes</p>
+                </article>
+
+                <!-- Form HTML -->
+                <form action="tak.html" name="forside">
+                    <div class="form-felt">
+                        <label>
+                            Fulde navn *
+                            <input placeholder="Indtast dit navn" type="text" name="fnavn" required>
+                        </label>
+                    </div>
+
+                    <div class="form-felt">
+                        <label>
+                            E-mail *
+                            <input placeholder="Indtast din E-mail" name="email" type="email" required>
+                        </label>
+                    </div>
+                    <div class="form-felt">
+                        <label>
+                            Besked
+                            <textarea name="besked" rows="7"></textarea>
+                        </label>
+                    </div>
+                    <button> Send</button>
+                </form>
             </div>
         </section>
+
     </main>
 
     <footer>

@@ -1,21 +1,129 @@
+body {
+    background: url(../baggrund.png) no-repeat fixed top;
+}
+
 #splach {
     max-width: none;
     width: 100%;
     height: 80vh;
     background-image: url(../splch_eksamen.png);
+    z-index: 10;
     background-size: cover;
     background-position: 100%;
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-areas: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
 }
 
 #splach .section_wrapper {
     grid-column-start: 1;
     grid-column-end: span 1;
-    grid-row-start: 1;
+    grid-row-start: 3;
     grid-row-end: span 1;
     text-align: center;
+    grid-row-gap: 90px;
+}
+
+
+/*----------------udpluk ------------------*/
+
+#udpluk {
+    background-color: #FFFFFF;
+    margin-top: 40px;
+}
+
+#udpluk .overskrift_udpluk {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#udpluk .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#udpluk .col_left {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    column-gap: 90px;
+    padding-left: 90px;
+    width: 70%;
+/*    filter: grayscale(100%);*/
+
+}
+
+#udpluk .col_right {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    column-gap: 90px;
+    width: 70%;
+    padding-left: 90px;
+
+}
+
+/*
+.top a {
+    filter: grayscale(50%);
+}
+
+#udpluk a:hover {
+    opacity: 100%;
+}*/
+
+#udpluk .bottom {
+    text-align: center;
+}
+
+
+.knap {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+    background-color: #2F3640;
+    text-align: center;
+    box-shadow: 5px 5px 5px gray;
+    color: #FFFFFF;
+
+
+}
+
+
+.button a {
+    color: rgb(255, 255, 255);
+    font-size: 0.70rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#om_mig {
+    background-color: #FFFFFF;
+    margin-top: 200px;
 }
 
 
@@ -24,4 +132,11 @@
         height: 100vh;
     }
 
+    #splach .section_wrapper {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        text-align: center;
+    }
 }

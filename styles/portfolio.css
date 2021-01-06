@@ -1,0 +1,133 @@
+#portfolio_splash {
+    max-width: none;
+    width: 100%;
+    height: auto;
+    background: url(../baggrund.png) no-repeat fixed top;
+}
+
+#portfolio_splash .section_wrapper {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 200px;
+    color: #eba31b;
+}
+
+
+
+/*----------indholdet -------------*/
+
+#portfolio_indhold .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 100px;
+}
+
+
+/*
+#portfolio_indhold .left_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#portfolio_indhold .right_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#portfolio_indhold .left_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#portfolio_indhold .right_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+*/
+
+
+
+/*
+#portfolio_indhold .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 90px;
+}
+
+
+#portfolio_indhold .col_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+#portfolio_indhold .col_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+
+#portfolio_indhold .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#portfolio_indhold .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+*/
+
+
+
+@media only screen and (min-width: 600px) {
+    nav {
+        background-color: #ffff;
+    }
+
+    #portfolio_splash {
+        height: auto;
+    }
+
+    #portfolio_splash .section_wrapper {
+        padding-bottom: 150px;
+        padding-top: 300px;
+    }
+
+    /*----------- billede med mig og selve teksten-----*/
+
+    #om_mig_mig .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 40px;
+    }
+
+
+    /*-----------tekst delens grid---------*/
+    #om_mig_tekst {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+
+
+
+
+
+
+
+}
