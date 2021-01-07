@@ -42,6 +42,21 @@ video {
 
 @media only screen and (min-width: 600px) {
 
+
+    nav {
+        background-color: #ffff;
+    }
+
+    #pilot_splash {
+        height: auto;
+    }
+
+    #pilot_splash .section_wrapper {
+        padding-bottom: 150px;
+        padding-top: 300px;
+    }
+
+
     /*-----------------pilot_overskift--------------*/
     #pilot_overskrift .section_wrapper {
         text-align: center;

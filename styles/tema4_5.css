@@ -118,6 +118,11 @@ img {
         padding: 0px 50px;
     }
 
+    #tema5_overskrift .tema5_overskirft_tekst {
+        padding: 0px 100px;
+    }
+
+
     #tema5_overskrift .intro {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

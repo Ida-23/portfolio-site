@@ -1,0 +1,75 @@
+.section_wrapper {
+    padding: 0px 12px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+
+/*-------------baggrunds billede i toppen-------*/
+#spil_splash {
+    max-width: none;
+    width: 100%;
+    height: auto;
+    background: url(../baggrund.png) no-repeat fixed top;
+}
+
+#spil_splash .section_wrapper {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 200px;
+    color: #eba31b;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    nav {
+        background-color: #ffff;
+    }
+
+    #spil_splash {
+        height: auto;
+    }
+
+    #spil_splash .section_wrapper {
+        padding-bottom: 150px;
+        padding-top: 300px;
+    }
+
+    /*-----------------spil_overskrift--------------*/
+    #spil_overskrift .section_wrapper {
+        text-align: center;
+        margin: 70px 0px;
+    }
+
+    /*-----------------spil_first-------------*/
+    #spil_first .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 70px 0px;
+    }
+
+
+    /*-----------------spil_second--------------*/
+    #spil_second .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #spil_third .section_wrapper {
+        margin-top: 70px;
+        margin-bottom: 140px;
+    }
+
+
+
+
+
+}

@@ -46,6 +46,20 @@ h3 {
 
 
 @media only screen and (min-width: 600px) {
+
+    nav {
+        background-color: #ffff;
+    }
+
+    #redesign_splash {
+        height: auto;
+    }
+
+    #redesign_splash .section_wrapper {
+        padding-bottom: 150px;
+        padding-top: 300px;
+    }
+
     video {
         margin: 0;
         height: auto;
