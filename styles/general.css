@@ -6,7 +6,6 @@ img {
 body {
     margin: 0;
     padding: 0;
-    /*    background-color: #0B1327;*/
 }
 
 header {
@@ -23,9 +22,9 @@ section {
 }
 
 nav {
-    position: fixed;
     width: 100%;
     height: auto;
+    position: fixed;
 }
 
 
@@ -66,21 +65,25 @@ a {
 
 .hidden {
     opacity: 0;
-    /*    transform: translateX(-100%);*/
-
+    margin: 0;
 }
 
 #menuknap {
     display: inline-block;
+    /*
     display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
+    justify-content: flex-start;
+*/
+    margin-left: 20px;
+    font-size: 3rem;
 }
 
 #menu {
     list-style-type: none;
     background-color: rgba(195, 195, 195, 0.8);
-    /*    background-color: rgba(186, 182, 182, 0.8);*/
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
 #menu li {
@@ -103,9 +106,8 @@ a:hover {
 
 
 .logo {
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 30px;
-
 }
 
 .logo a {
@@ -120,34 +122,23 @@ a:hover {
 /*-------------footer---------------------------*/
 footer {
     height: auto;
-    background-color: #4444;
-    padding-bottom: 40px;
+    background-color: #2F3640;
 }
 
 footer .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     color: aliceblue;
     padding: 0px 12px;
+    text-align: center;
 
 }
 
 footer .section_wrapper .top {
-    grid-column-start: 1;
-    grid-column-end: span 1;
-    grid-row-start: 1;
-    grid-row-end: span 1;
     border-bottom: 1px solid rgba(195, 195, 195, 0.8);
 
 }
 
-footer .section_wrapper .bottom {
-    grid-column-start: 1;
-    grid-column-end: span 1;
-    grid-row-start: 2;
-    grid-row-end: span 1
-}
 
 
 
@@ -179,18 +170,22 @@ footer .section_wrapper .bottom {
         margin-top: 0;
     }
 
-    /*
-    .pil {
-        background-image: url(../pil.svg);
-        width: 3.4vw;
-        height: 6.3vw;
 
-    }
-*/
 
 
     /*------------footer----------------------*/
     footer .section_wrapper {
         padding: 0px 123px;
+    }
+
+    footer .section_wrapper .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bottom h4 {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

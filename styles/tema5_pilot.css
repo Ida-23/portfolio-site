@@ -1,0 +1,112 @@
+/*-------------baggrunds billede i toppen-------*/
+#pilot_splash {
+    max-width: none;
+    width: 100%;
+    height: auto;
+    background: url(../baggrund.png) no-repeat fixed top;
+}
+
+#pilot_splash .section_wrapper {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 200px;
+    color: #eba31b;
+}
+
+
+
+/*---------------polit_second----------------*/
+
+video {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+.section_wrapper {
+    padding: 0px 12px;
+}
+
+
+/*---------------polit_third----------------*/
+#pilot_third p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    /*-----------------pilot_overskift--------------*/
+    #pilot_overskrift .section_wrapper {
+        text-align: center;
+        margin: 70px 0px;
+    }
+
+
+
+
+    /*---------------polit_first grid-----------------*/
+
+    #pilot_first .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 70px 0px;
+    }
+
+
+
+    /*---------------polit_second----------------*/
+    #pilot_second .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 70px 0px;
+    }
+
+    video {
+        margin: 0;
+        height: auto;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+
+
+    /*---------------polit_third----------------*/
+    #pilot_third .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr;
+        grid-column-gap: 20px;
+        margin-bottom: 140px;
+        margin-top: 70px;
+    }
+
+    #pilot_third .col_top {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    #pilot_third .col_left {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
+
+    #pilot_third .col_left {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
+}
